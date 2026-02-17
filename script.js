@@ -28,6 +28,9 @@ function generarCVPDF() {
         // Clona la plantilla para evitar modificar el DOM original
         const clone = cvPlantilla.cloneNode(true);
         clone.style.display = 'block';
+        clone.style.position = 'absolute';
+        clone.style.left = '-9999px';
+        document.body.appendChild(clone);
 
         // Usa html2pdf para generar el PDF desde la plantilla
         html2pdf()
@@ -35,9 +38,12 @@ function generarCVPDF() {
                 margin: 10,
                 filename: 'Heber_Mejia_Jacobo_CV.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
+                html2canvas: { scale: 2, useCORS: true, backgroundColor: '#fff' },
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
             })
             .from(clone)
-            .save();
+            .save()
+            .then(() => {
+                document.body.removeChild(clone);
+            });
 }

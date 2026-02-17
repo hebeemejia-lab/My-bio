@@ -1,3 +1,72 @@
+#cv-plantilla {
+    page-break-after: avoid;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+    background: #fff !important;
+    color: #23272f !important;
+    box-shadow: none !important;
+}
+#cv-plantilla * {
+    box-shadow: none !important;
+    background: none !important;
+}
+/* Estilos para la plantilla de CV profesional */
+#cv-plantilla {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    color: #23272f;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 2rem 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#cv-plantilla header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+}
+#cv-plantilla header p {
+    font-size: 1.1rem;
+    color: #6cb4ee;
+    margin-top: 0;
+}
+#cv-plantilla section {
+    margin-bottom: 1.2rem;
+}
+#cv-plantilla h2 {
+    font-size: 1.3rem;
+    color: #23272f;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+#cv-plantilla ul {
+    padding-left: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+}
+#cv-plantilla li {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+#cv-plantilla article {
+    margin-bottom: 0.7rem;
+}
+#cv-plantilla footer {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 1.2rem;
+    padding-top: 0.7rem;
+    font-size: 0.98rem;
+    color: #555;
+}
+#cv-plantilla a {
+    color: #6cb4ee;
+    text-decoration: none;
+}
+#cv-plantilla a:hover {
+    text-decoration: underline;
+}
 /* Botón para descargar CV */
 .btn-cv {
     display: inline-block;
